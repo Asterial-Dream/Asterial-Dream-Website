@@ -1,0 +1,67 @@
+@-webkit-keyframes colorway {
+    0% {color: black;}
+    50% {color: white;}
+    100% {color: black;}
+}
+
+#ConstructionMain
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.MainParam{
+    background-color: #FFCCD5;
+}
+.Construction{
+    text-align: center;
+    -webkit-animation-name: colorway;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 2.5s;
+}
+
+.Construction #Text1
+{
+    font-family: cursive;
+    font-weight: lighter;
+}
+
+.links #redirect1
+{
+    position:fixed;
+    left: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    width: 8%;
+    height: auto;
+}
+
+.links #redirect2
+{
+    position: fixed;
+    left: 40%;
+    max-width: 200px;
+    max-height: 200px;
+    width: 8%;
+    height: auto;
+}
+
+.links #redirect3
+{
+    position: fixed;
+    left: 60%;
+    max-width: 200px;
+    max-height: 200px;
+    width: 8%;
+    height: auto;
+    filter:brightness(0);
+}
+
+.links img:hover
+{
+    opacity: 0.5;
+}
+
+
+
