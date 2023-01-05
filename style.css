@@ -1,67 +1,53 @@
-@-webkit-keyframes colorway {
-    0% {color: black;}
-    50% {color: white;}
-    100% {color: black;}
-}
+@import "animations.css";
 
-#ConstructionMain
-{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.MainParam{
+#BACKGROUND {
     background-color: #FFCCD5;
 }
-.Construction{
-    text-align: center;
-    -webkit-animation-name: colorway;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 2.5s;
+
+.Container {
+    position: relative;
+    top: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.Construction #Text1
-{
-    font-family: cursive;
-    font-weight: lighter;
+.Construction__text {
+    animation: colorway 1s infinite alternate-reverse;
+    font-size: 2vw;
+    font-family: 'Architects Daughter', cursive;
 }
 
-.links #redirect1
-{
-    position:fixed;
-    left: 50%;
-    max-width: 200px;
-    max-height: 200px;
-    width: 8%;
-    height: auto;
+.Links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.3vh;
 }
 
-.links #redirect2
-{
-    position: fixed;
-    left: 40%;
-    max-width: 200px;
-    max-height: 200px;
-    width: 8%;
-    height: auto;
+.Links__Image {
+    filter: brightness(0);
+    background-size: 100%;
+    box-sizing: border-box;
+    height: 2vw;
+    width: 2vw;
+    margin-left: 1vw;
 }
 
-.links #redirect3
-{
-    position: fixed;
-    left: 60%;
-    max-width: 200px;
-    max-height: 200px;
-    width: 8%;
-    height: auto;
-    filter:brightness(0);
+.Links__Image:hover {
+    opacity: 0.25;
 }
 
-.links img:hover
-{
-    opacity: 0.5;
+.Links__Image--Github {
+    background-image: url("/Assets/github-mark.png");
 }
 
+.Links__Image--Instagram {
+    background-image: url("/Assets/Instagram_Glyph_Black.png");
+}
 
+.Links__Image--Twitter {
+    background-image: url("/Assets/Twitter social icons - circle - white.png");
+}
 

@@ -1,0 +1,9 @@
+@keyframes colorway {
+    0% {color: black}
+    100% {color: white}
+}
+
+@keyframes opacityShift {
+    0% {opacity: 100%;}
+    100% {opacity: 50%;}
+}
