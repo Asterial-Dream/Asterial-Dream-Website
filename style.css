@@ -90,6 +90,7 @@ body {
   max-width: 25vw;
   max-height: 100%;
   height: 60%;
+  justify-content: center;
 }
 
 .welcomeBox {
@@ -132,10 +133,17 @@ body {
   background-color: rgb(209, 179, 179);
 }
 
+.textBox {
+}
+
 .textBox p{
   font-size: 2vw;
   margin: 0;
   margin-bottom: 8%;
+}
+
+.textBox svg {
+  /* align-self: flex-start; */
 }
 
 .textAdder {
