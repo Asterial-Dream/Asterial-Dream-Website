@@ -1,53 +1,166 @@
-@import "animations.css";
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-#BACKGROUND {
-    background-color: #FFCCD5;
+@keyframes tickerAnimation {
+  from {
+    opacity: 100;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
 
-.Container {
-    position: relative;
-    top: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: white;
+  overflow: auto;
 }
 
-.Construction__text {
-    animation: colorway 1s infinite alternate-reverse;
-    font-size: 2vw;
-    font-family: 'Architects Daughter', cursive;
+.flexColumn {
+  display: flex;
+  flex-direction: column;
 }
 
-.Links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0.3vh;
+.flexRow {
+  display: flex;
+  flex-direction: row;
 }
 
-.Links__Image {
-    filter: brightness(0);
-    background-size: 100%;
-    box-sizing: border-box;
-    height: 2vw;
-    width: 2vw;
-    margin-left: 1vw;
+.flexEnd {
+  justify-content: flex-end;
 }
 
-.Links__Image:hover {
-    opacity: 0.25;
+.navbar {
+  background-color: #F0F0F0;
+  height: 50px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.Links__Image--Github {
-    background-image: url("/Assets/github-mark.png");
+.lineBreak {
+  border-inline: 0px;
+  border-top: 0px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #E0E6F1;
+  height: 50px;
+  width: 100%;
 }
 
-.Links__Image--Instagram {
-    background-image: url("/Assets/Instagram_Glyph_Black.png");
+.navbarBox {
+  flex: auto;
+  max-width: 30%;
+  max-height: inherit;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.Links__Image--Twitter {
-    background-image: url("/Assets/Twitter social icons - circle - white.png");
+.navbar-item {
+  font-size: 100%;
+  color: #727272;
+  text-decoration: none;
 }
 
+.navbar-item:hover {
+  color: #000000;
+}
+
+.mainContainer {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+/* .introBox {
+  height: 500px;
+  width: 100%;
+} */
+
+.welcomeBox {
+
+  height: 300px;
+  width: 100%;
+}
+
+.recentBox {
+  height: 500px;
+  width: 100%;
+}
+
+.workBox {
+  height: 40%;
+  width: 20%;
+  margin: 15px;
+  padding: 15px;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.workImage {
+  width: 200px;
+}
+
+
+
+.icon-button {
+  font-size: 40px;
+  color: #1d1b1b;
+  padding: 25px;
+  margin: 5px;
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  border-color: transparent;
+  color: rgb(255, 255, 255);
+  background-color: rgb(209, 179, 179);
+}
+
+.textBox {
+  padding: 30px;
+}
+
+
+.viewButton {
+  border-color: transparent;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(209, 179, 179);
+  cursor: pointer;
+}
+
+.viewButton:hover {
+  background-color: rgb(224, 191, 191);
+}
+
+.viewButton:active {
+  background-color: rgb(197, 131, 131);
+}
+
+.animationOne {
+  display: flex;
+  white-space: pre;
+
+}
+
+.tickerBar {
+  border-block: 0px;
+  border-right: 0px;
+  border-left: 1px;
+  height: 40px;
+  align-self: center;
+  justify-self: center;
+  border-color: black;
+  border-style: solid;
+  animation-name: tickerAnimation;
+  animation-duration: 0.1s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
