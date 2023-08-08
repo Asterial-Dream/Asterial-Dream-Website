@@ -51,7 +51,7 @@ body {
 .lineBreak {
   border-inline: 0px;
   border-top: 0px;
-  border-bottom: 0.1rem;
+  border-bottom: 0.05rem;
   border-style: solid;
   border-color: #E0E6F1;
   width: 100%;
@@ -94,6 +94,7 @@ body {
   border-color: transparent;
   background-color: transparent;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .icon-button:hover {
@@ -134,8 +135,8 @@ body {
 .tickerBar {
   border-block: 0px;
   border-right: 0px;
-  border-left: 1px;
-  max-height: 2.5vw;
+  border-left: 0.035em;
+  height: 3vw;
   border-color: black;
   border-style: solid;
   animation-name: tickerAnimation;

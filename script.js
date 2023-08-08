@@ -9,8 +9,8 @@ ticker.addEventListener("animationiteration", function oneTime(e) {
   console.log(e);
 
   if (deletionFlag == true) {
-    ticker.removeEventListener("animationiteration", oneTime)
-
+    ticker.removeEventListener("animationiteration", oneTime);
+    ticker.remove();    
     // deleteText(textAddition);
 
     // if (textAddition.textContent.length == 0) {
