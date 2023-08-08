@@ -1,23 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('./animations.css');
 
-@keyframes tickerAnimation {
-  from {
-    opacity: 100;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes slideFade {
-  0% {
-      margin-top: 50px;
-      opacity: 0;
-  }
-  100% {
-      margin-top: 0px;
-      opacity: 100%;
-  }
+html {
+  font-size: 1rem;
 }
 
 body {
@@ -31,6 +16,7 @@ body {
   animation-duration: 1.5s;
   animation-direction: ease-out;
 }
+
 
 .flexColumn {
   display: flex;
@@ -54,9 +40,10 @@ body {
 
 .navbar {
   margin-bottom: 15vh;
-  background-color: #F0F0F0;
-  height: 50px;
+  padding-block: 1.5rem;
   width: 100%;
+  max-width: 100vw;
+  background-color: #F0F0F0;
   justify-content: space-between;
   align-items: center;
 }
@@ -64,23 +51,20 @@ body {
 .lineBreak {
   border-inline: 0px;
   border-top: 0px;
-  border-bottom: 100%;
+  border-bottom: 0.05rem;
   border-style: solid;
   border-color: #E0E6F1;
-  height: 1px;
   width: 100%;
 }
 
 .navbarBox {
-  flex: auto;
-  max-width: 30%;
-  max-height: inherit;
-  justify-content: space-around;
+  flex: 1;
+  max-width: 10%;
   align-items: center;
 }
 
 .navbar-item {
-  font-size: 100%;
+  margin-inline: 0.5em;
   color: #727272;
   text-decoration: none;
 }
@@ -90,63 +74,32 @@ body {
 }
 
 .mainContainer {
-    height: 40vh;
-    width: 100vw;
+    width: 100%;
+    max-width: 100vw;
     justify-content: space-evenly;
     align-items: center;
 }
 
-
-
 .introBox {
   flex: auto;
   max-width: 25vw;
-  max-height: 100%;
   height: 60%;
   justify-content: center;
 }
 
-.welcomeBox {
-  height: 300px;
-  width: 100%;
-}
-
-.recentBox {
-  height: 500px;
-  width: 100%;
-}
-
-.workBox {
-  height: 40%;
-  width: 20%;
-  margin: 15px;
-  padding: 15px;
-  min-height: 200px;
-  min-width: 200px;
-}
-
-.workImage {
-  width: 200px;
-}
-
-
 
 .icon-button {
-  font-size: 2.5vw;
+  font-size: 3vw;
   color: #BEA4B4;
-  padding: 1%;
   border-color: transparent;
   background-color: transparent;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .icon-button:hover {
   border-color: transparent;
-  color: rgb(255, 255, 255);
-  background-color: rgb(209, 179, 179);
-}
-
-.textBox {
+  color: #033a5d;
 }
 
 .textBox p{
@@ -155,14 +108,9 @@ body {
   margin-bottom: 8%;
 }
 
-.textBox svg {
-  /* align-self: flex-start; */
-}
-
 .textAdder {
     color: #235572;
 }
-
 
 .viewButton {
   border-color: transparent;
@@ -187,7 +135,7 @@ body {
 .tickerBar {
   border-block: 0px;
   border-right: 0px;
-  border-left: 1px;
+  border-left: 0.035em;
   height: 3vw;
   border-color: black;
   border-style: solid;
